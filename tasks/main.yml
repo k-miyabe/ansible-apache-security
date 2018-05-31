@@ -1,7 +1,7 @@
 ---
 - name: Add Apache security.conf into /etc/httpd/conf.d/
   copy:
-    src: ../files/security.conf
+    src: security.conf
     dest: /etc/httpd/conf.d/
   notify: restart apache
 
